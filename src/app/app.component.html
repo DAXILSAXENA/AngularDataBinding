@@ -1,5 +1,5 @@
 <!--
-  Ability To launch BridgeLabz Site in a new Tab on clicking BridgeLabz Logo.
+  To display Hello from BridgeLabz with a user inputted name.
   @author : DAXIL SAXENA
   @since : 22.08.2021
 -->
@@ -7,6 +7,9 @@
 <div class="container">
   <h1>{{this.title}}</h1>
   <img [src] ="imgUrl" (click) = "onClick($event)" alt="The Bridgelabz Logo: a Bridge to Employement through Lab Works."/>
+</div>
+<div class="container">
+  <input [(ngModel)]="userName"/>
 </div>
 
 <router-outlet></router-outlet>

@@ -9,11 +9,13 @@ export class AppComponent {
   title = 'hello-world';
   imgUrl="";
   url="";
+  userName: String = "";
 
   ngOnInit(): void {
     this.title = "Hello from BridgeLabz";
     this.imgUrl = "../assets/BL_logo_square_jpg.jpg";
     this.url = "https://www.bridgelabz.com";
+    this.userName = "Daxil";
   } 
 
   onClick($event: any) {
